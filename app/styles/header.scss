@@ -1,0 +1,38 @@
+.nav-menu{
+  font-size: clamp(0.9375rem, 0.5583rem + 1.517vw, 2.5rem);
+}
+
+.menu-item{
+  display: inline-block;
+  position: relative;
+}
+
+.menu-item:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.menu-item:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.head-img{
+  visibility: hidden;
+  transform: translateX(-200px);
+  transition: transform 0.5s;
+}
+
+.menu-item{
+  visibility: hidden;
+  transform: translateX(200px);
+  transition: transform 0.5s;
+}

@@ -17,17 +17,19 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: black;
+  height: 100vh;
+  margin: 0rem;
+  overflow: hidden; 
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.hero-span:hover{
+  -webkit-text-stroke: 1px white;
+}
+
+.hero-span{
+  visibility: hidden;
+  transform: translateY(100px);
+  transition: transform 0.5s;
+  z-index: 10;
 }
