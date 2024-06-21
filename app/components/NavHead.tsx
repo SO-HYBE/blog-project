@@ -2,9 +2,8 @@
 import Image from "next/image"
 import mainLogo from "../../public/logo-white.png"
 import gsap from "gsap";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
-import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
 
 export default function NavHead() {
   const headRef = useRef(null);
@@ -49,7 +48,7 @@ export default function NavHead() {
   }, [pathname]);
 
   return (
-    <nav className="top-0 left-0 pt-5 flex flex-row justify-between overflow-x-hidden z-20 fixed px-5 w-full mix-blend-difference" ref={headRef}>
+    <nav className="top-0 left-0 pt-5 flex flex-row justify-between overflow-x-hidden z-50 fixed px-5 w-full mix-blend-difference" ref={headRef}>
       <a className="head-img" href="/"><Image priority className="top-0 left-0 h-auto w-auto hover:opacity-[80%]" src={mainLogo} alt={"White logo of BNW"} width={180} height={180} /></a>
       <div className="flex items-center justify-center">
         <div className="nav-menu grid grid-cols-2 text-white gap-y-7 gap-x-10 h-fit w-fit align-middle text-center font-oswald">

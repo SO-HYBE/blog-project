@@ -58,11 +58,9 @@ export default function Home() {
   return (
     <main className="homepage h-full">
       <NavHead />
-      <div className="home-container mb-32 relative" ref={elementsRef}>
+      <div className="home-container mb-32 bg-black relative" ref={elementsRef}>
 
-      <div className="h-[100vh]">
-        <Image className="absolute bg-gif blur-xl" src={bgGif} alt="background gif" fill={true} style={{objectFit:"cover"}} sizes="100%"></Image>
-      </div>
+      <Image unoptimized className="absolute bg-gif blur-xl" src={bgGif} alt="background gif" fill={true} style={{objectFit:"cover"}} sizes="100%"></Image>
 
       <div className="hero-section h-[100vh] relative flex flex-row items-center justify-center">
         <div className="hero-text relative flex flex-row whitespace-pre w-full h-full items-center justify-center hover:cursor-default">
