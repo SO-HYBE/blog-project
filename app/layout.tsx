@@ -8,6 +8,7 @@ import footerStyle from "./styles/footer.scss";
 import cardsStyle from "./styles/cards.scss";
 import createStyle from "../app/create/style.scss";
 import postStyle from "../app/post/style.scss";
+import blogPostStyle from "../app/blogpost/[slug]/style.scss" 
 
 const oswald : NextFontWithVariable = Oswald({
   subsets: ['latin'],
@@ -28,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <link rel="icon" href="/favicon.ico?" sizes="any" />
-      <body className={`${oswald.variable} ${headerStyle} ${footerStyle} ${cardsStyle} ${createStyle} ${postStyle} font-sans`}>
+      <body className={`${oswald.variable} ${headerStyle} ${footerStyle} ${cardsStyle} ${createStyle} ${postStyle} ${blogPostStyle} font-sans`}>
         <SmoothScroll>
           {children}
         </SmoothScroll>  
