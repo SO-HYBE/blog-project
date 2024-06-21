@@ -20,3 +20,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 
 Happy Coding 😎😎
+
+PS. THERE IS A LITTLE EASTER EGG ON THE WEBSITE. 🤫🤫
