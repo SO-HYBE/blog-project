@@ -1,6 +1,6 @@
-import NavHead from "../components/header";
+import NavHead from "../components/NavHead";
 
-export default function Create(){
+export default function CreatePost(){
 
     return(
     <main className="mx-5 h-[100vh]">

@@ -1,4 +1,4 @@
-import NavHead from "../components/header";
+import NavHead from "../components/NavHead";
 
 export default function Post() {
 

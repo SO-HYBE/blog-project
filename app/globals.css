@@ -29,7 +29,5 @@ body {
 
 .hero-span{
   visibility: hidden;
-  transform: translateY(100px);
-  transition: transform 0.5s;
   z-index: 10;
 }
