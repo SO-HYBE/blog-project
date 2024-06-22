@@ -69,7 +69,7 @@ export default function Post() {
     <main className="mx-5 h-[100vh]">
       <NavHead />
       
-      <div className="blog-posts min-h-screen h-fit mb-20 mt-52 font-oswald z-20 bg-black relative" ref={postRef}>
+      <div className="blog-posts min-h-[550vh] pb-[10rem] h-fit mb-20 mt-52 font-oswald z-20 bg-black relative" ref={postRef}>
         <div className="title-container flex flex-row items-center justify-center whitespace-pre cursor-default pb-20">
           <span className="title-post text-white font-oswald text-6xl hover:text-black">Take </span>
           <span className="title-post text-white font-oswald text-6xl hover:text-black">A </span>

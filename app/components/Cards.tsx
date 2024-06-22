@@ -68,7 +68,7 @@ export default function Cards (){
     );
 
     return(
-        <div className="blog-posts h-fit mx-5 mt-52 font-oswald z-20" ref={cardsRef}>
+        <div className="blog-posts h-fit mx-5 mt-52 font-oswald z-20 min-h-[520vh] pb-[10rem]" ref={cardsRef}>
         <div className="title-container flex flex-row items-center justify-center whitespace-pre cursor-default">
           <span className="recent-title text-white font-oswald text-4xl hover:text-black">Dive </span>
           <span className="recent-title text-white font-oswald text-4xl hover:text-black">into </span>

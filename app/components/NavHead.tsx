@@ -18,10 +18,10 @@ export default function NavHead() {
 
             if (url === '/') {
               tl2.to(".head-img", { x: 0, duration: 1, autoAlpha: 1, delay: 4, ease: "power1.in"});
-              gsap.to(".menu-item",{x: 0, duration: 1, autoAlpha: 1, ease: "power1.in", delay: 4});
+              gsap.to(".menu-item",{x: 0, duration: 1, autoAlpha: 1, ease: "power1.in", delay: 3.9});
             }else{
               tl2.to(".head-img", { x: 0, duration: 1, autoAlpha: 1, delay: 0.5, ease: "power1.in"});
-              gsap.to(".menu-item",{x: 0, duration: 1, autoAlpha: 1, ease: "power1.in", delay: 0.5});
+              gsap.to(".menu-item",{x: 0, duration: 1, autoAlpha: 1, ease: "power1.in", delay: 0.4});
             }
           };
 

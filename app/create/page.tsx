@@ -103,7 +103,7 @@ export default function CreatePost(){
               className="rounded-md focus:bg-black focus:text-white h-36 text-black"></textarea>
               <button className="block w-full bg-black text-white p-4 rounded-lg border-4 border-white text-xl hover:bg-white hover:text-black duration-700 hover:shadow-inner hover:tracking-[1em] hover:font-bold" type="submit">CREATE</button>
             </form>
-              <Image className="rounded-md basis-1/4" width={300} height={300} src={createImg} alt="Man in a dark desert"></Image>          
+              <Image className="rounded-md basis-1/4 hover:invert duration-700" width={300} height={300} src={createImg} alt="Man in a dark desert"></Image>          
             </div>
       </div>
       <Footer />
