@@ -74,7 +74,7 @@ export default function CreatePost(){
               <span className="title-create cursor-default text-white hover:text-black text-6xl">Express </span>
               <span className="title-create cursor-default text-white hover:text-black text-6xl">Yourself</span>
             </div>
-            <div className="flex flex-row justify-between w-full h-[80vh] px-32">
+            <div className="flex flex-row justify-between w-full h-[80vh] px-32 sm:flex-col">
             <form className="text-white relative flex flex-row sm:flex-col justify-between basis-1/2" onSubmit={handleSubmit}>
               <label className="text-xl" htmlFor="">Title</label>
               <input               
@@ -83,7 +83,7 @@ export default function CreatePost(){
               value={title}
               onChange={(e) => setTitle(e.target.value)}
               required
-              className="rounded-md focus:bg-black focus:text-white text-black"
+              className="rounded-md focus:bg-black focus:text-white text-black w-[50%]"
               />
               <label className="text-xl" htmlFor="">Author</label>
               <input 
@@ -92,7 +92,7 @@ export default function CreatePost(){
               value={author}
               onChange={(e) => setAuthor(e.target.value)}
               required 
-              className="rounded-md focus:bg-black focus:text-white text-black"
+              className="rounded-md focus:bg-black focus:text-white text-black w-[50%]"
               />
               <label className="text-xl" htmlFor="">Content</label>
               <textarea               
@@ -103,7 +103,9 @@ export default function CreatePost(){
               className="rounded-md focus:bg-black focus:text-white h-36 text-black"></textarea>
               <button className="block w-full bg-black text-white p-4 rounded-lg border-4 border-white text-xl hover:bg-white hover:text-black duration-700 hover:shadow-inner hover:tracking-[1em] hover:font-bold" type="submit">CREATE</button>
             </form>
-              <Image className="rounded-md basis-1/4 hover:invert duration-700" width={300} height={300} src={createImg} alt="Man in a dark desert"></Image>          
+              <div className="overflow-hidden rounded-lg basis-[fit-content] flex justify-between items-center">
+                <Image className="rounded-md hover:invert duration-700 hover:scale-125" width={400} height={400} src={createImg} alt="Man in a dark desert"></Image>          
+              </div>
             </div>
       </div>
       <Footer />
